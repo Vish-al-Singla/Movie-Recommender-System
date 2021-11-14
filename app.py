@@ -4,7 +4,6 @@ import pickle
 import pandas as pd
 import requests
 from itertools import cycle
-from PIL import Image
 
 def fetch_poster(movie_id):
     url ='https://api.themoviedb.org/3/movie/{}?api_key=8d4222eaf0fc55d4781fe3e4f2650478&language=en-US'.format(movie_id)
@@ -42,4 +41,5 @@ if st.button('Show Recommendation'):
     recommended_movie_names,recommended_movie_posters = recommend(selected_movie)
     cols =cycle(st.columns((1,1,1)))
     for idx, recommended_movie_poster in enumerate(recommended_movie_posters):
-        next(cols).image(recommended_movie_poster,caption=recommended_movie_names[idx])
+        next(cols).image(recommended_movie_poster, caption=recommended_movie_names[idx])
+
