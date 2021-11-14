@@ -5,6 +5,13 @@ import pandas as pd
 import requests
 from itertools import cycle
 
+hide_menu_style = """
+            <style>
+            #MainMenu {visibility:hidden;}
+            footer {visibility:hidden;}
+            </style>
+            """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 def fetch_poster(movie_id):
     url ='https://api.themoviedb.org/3/movie/{}?api_key=8d4222eaf0fc55d4781fe3e4f2650478&language=en-US'.format(movie_id)
     data = requests.get(url)
