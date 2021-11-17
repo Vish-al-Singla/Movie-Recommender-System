@@ -49,4 +49,3 @@ if st.button('Show Recommendation'):
     cols =cycle(st.columns((1,1,1)))
     for idx, recommended_movie_poster in enumerate(recommended_movie_posters):
         next(cols).image(recommended_movie_poster, caption=recommended_movie_names[idx])
-
