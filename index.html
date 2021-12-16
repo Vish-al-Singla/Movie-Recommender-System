@@ -10,7 +10,7 @@
 <body>
     <header>
         <a href="#" class="logo"><img src="/img/logo.png"></a>
-        <div class="toggle"><img src="/img/toggle.png"></div>
+        <!--<div class="toggle"><img src="/img/toggle.png"></div>!-->
     </header>
     <div class="banner">
         <div class="content">
@@ -26,8 +26,12 @@
         </div>
     </div>
     <div class="trailer">
-        <video src="trailer.mp4" controls="true"></video>
-        <img src="/img/close.png" class="close" onclick="toggle();">
+        <center>
+            <video src="trailer.mp4" controls="true"></video>
+            <img src="/img/close.png" class="close" onclick="toggle();">
+            <button class="btn">Recommend Related Movies</button>
+        </center>
+        
     </div>
     <script type="text/javascript">
         function toggle(){

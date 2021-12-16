@@ -166,3 +166,80 @@ max-width: 550px;
     max-width: 32px;
     -webkit-filter: invert(1);
 }
+
+@media (max-width: 991px)
+{
+    header {
+        padding: 20px 50px;
+    }
+    header {
+        padding: 20px 50px;
+    }
+    header .logo {
+        max-width: 80px;
+    }
+    header .toggle
+    {
+        max-width: 80px;
+    }
+    .banner{
+        padding: 100px 50px;
+    }
+    .banner .content h2 
+    {
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+    }
+    .banner .content p
+    {
+        font-size: 1em;
+    }
+    .slide {
+        position: relative;
+        bottom: initial;
+        left: 0;
+        width: 250px;
+        height: 150px;
+        margin: 20px 0;
+    }
+    .sci 
+    {
+        position: absolute;
+        top: initial;
+        right: initial;
+        margin-top: 40px;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+    .sci li 
+    {
+        list-style: none;
+        margin: 0 5px;
+    }
+    .trailer video 
+    {
+        max-width: 90%;
+        outline: none;
+    }
+    
+}
+.btn {
+        margin: 100px;
+        padding: 10px;
+        border-radius: 15px;
+        position: fixed;
+        top: 70%;
+        right: 35%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
