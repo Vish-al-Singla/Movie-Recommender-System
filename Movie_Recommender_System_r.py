@@ -5,13 +5,14 @@ import pandas as pd
 import requests
 from itertools import cycle
 
-# hide_menu_style = """
-#             <style>
-#             #MainMenu {visibility:hidden;}
-#             footer {visibility:hidden;}
-#             </style>
-#             """
-# st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+hide_menu_style = """
+            <style>
+            #MainMenu {visibility:hidden;}
+            footer {visibility:hidden;}
+            </style>
+            """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
 def fetch_poster(movie_id):
     url ='https://api.themoviedb.org/3/movie/{}?api_key=8d4222eaf0fc55d4781fe3e4f2650478&language=en-US'.format(movie_id)
     data = requests.get(url)
@@ -26,7 +27,7 @@ def recommend(movie):
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
     recommended_movie_names = []
     recommended_movie_posters = []
-    for i in distances[1:51]:
+    for i in distances[1:11]:
         # fetch the movie poster
         movie_id = movies.iloc[i[0]].movie_id
         recommended_movie_posters.append(fetch_poster(movie_id))

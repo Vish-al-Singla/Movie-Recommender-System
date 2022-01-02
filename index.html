@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,18 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>Movie Recommender System</title>
 </head>
+
 <body>
     <header>
         <a href="#" class="logo"><img src="/img/logo.png"></a>
-        <!--<div class="toggle"><img src="/img/toggle.png"></div>!-->
+        <div class="toggle"><img src="/img/toggle.png"></div>
     </header>
     <div class="banner">
         <div class="content">
             <h2>Put on a <span>Happy</span> face</h2>
-            <p>Lorem ipum dolor sit amet, consecuter </p>
+            <p>In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then
+                embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his
+                alter-ego: the Joker. Arthur Fleck works as a clown and is an aspiring stand-up comic. </p>
             <a href="#" class="play" onclick="toggle();"><img src="/img/play.png">Watch Trailer</a>
             <div class="slide"></div>
             <ul class="sci">
@@ -24,17 +28,17 @@
                 <li><a href="#"><img src="/img/instagram.png"></a></li>
             </ul>
         </div>
+        <button class="btn" onclick="location.href='http://192.168.29.232:8501'">Recommend Movies</button>
     </div>
     <div class="trailer">
         <center>
             <video src="trailer.mp4" controls="true"></video>
             <img src="/img/close.png" class="close" onclick="toggle();">
-            <button class="btn">Recommend Movies</button>
         </center>
-        
+
     </div>
     <script type="text/javascript">
-        function toggle(){
+        function toggle() {
             var trailer = document.querySelector('.trailer');
             var video = document.querySelector('video');
             trailer.classList.toggle('active');
@@ -43,4 +47,5 @@
         }
     </script>
 </body>
+
 </html>
